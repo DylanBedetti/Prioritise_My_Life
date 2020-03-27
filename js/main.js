@@ -5,7 +5,7 @@ $(document).ready(function() {
   $("#newItemButton").click(() => {
     var newContnet = `
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="item" />
+            <input type="text" class="form-control" placeholder="Item" />
             <div class="input-group-append">
                 <span class="input-group-text" style="cursor:pointer;">remove</span>
             </div>
@@ -21,4 +21,11 @@ $(document).ready(function() {
       .parent()
       .remove();
   });
+
+  $(document).on('keypress', ".form-control", function(e) {
+    if(e.which == 13) {
+        $("#newItemButton").click();
+        $("input:text:visible:last").focus();
+    }
+});
 });
