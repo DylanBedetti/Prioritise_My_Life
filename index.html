@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Prioritise My Life</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid p-3 my-3 bg-dark text-white">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h1>Prioritse My Life</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <p><b>Please enter your list of items below</b></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row" id="prioritiesList">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Item" />
+          <div class="input-group-append">
+            <span class="input-group-text" style="cursor:pointer;">remove</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="container pt-3 text-center">
+        <button type="button" class="btn btn-success" id="newItemButton">
+          New Item
+        </button>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js" async defer></script>
+  </body>
+</html>
