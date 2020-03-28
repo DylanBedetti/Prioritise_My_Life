@@ -1,3 +1,17 @@
 .final-list {
     display: list-item;
 }
+
+ol {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+  }
+ol li {
+    counter-increment: my-awesome-counter;
+  }
+ol li::before {
+    content: counter(my-awesome-counter) ". ";
+    color:rgb(52, 58, 64);;
+    font-weight: bold;
+  }
+  
