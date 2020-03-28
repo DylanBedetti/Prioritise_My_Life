@@ -54,9 +54,9 @@
 
     <div class="container d-none" id="listComparison"> 
       <div class="row">
-        <div class="col-sm-4 d-flex"><button class="btn btn-primary mx-auto">Element 1</button></div>
+        <div class="col-sm-4 d-flex"><button class="btn btn-primary mx-auto" id="priorityElement1">Element 1</button></div>
         <div class="col-sm-4 d-flex"><li class="list-group-item text-center mx-auto"><b>OR</b></li></div>
-        <div class="col-sm-4 d-flex"><button class="btn btn-primary mx-auto">Element 2</button></div>
+        <div class="col-sm-4 d-flex"><button class="btn btn-primary mx-auto" id="priorityElement2">Element 2</button></div>
       </div>
     </div>
 
@@ -81,7 +81,16 @@
           Done!
         </button>
       </div>
+
+      <div class="row justify-content-center d-none" id="orderedList"> 
+        <ol class="list-group text-center" id="orderedListItems">
+        </ol>
+      </div>
+
     </div>
+
+    
+
 
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
