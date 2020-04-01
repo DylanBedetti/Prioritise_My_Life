@@ -22,3 +22,7 @@ ol li::before {
 #orderedList {
   display: none;
 }
+
+.alert {
+  display: none;
+}

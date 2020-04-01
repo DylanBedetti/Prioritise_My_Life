@@ -34,7 +34,7 @@
             data-toggle="tooltip"
             data-placement="right"
             data-html="true"
-            title="Unsure about what to <b>study?</b> Don't know what <b>hobbies</b> you should focus on? Contemplating what you should get for <b>Uber Eats?</b> Find out what you <b>truly prioritise</b>"
+            title="Unsure about what to <b>study?</b> Don't know what <b>hobbies</b> you should focus on? Contemplating what you should get for <b>Uber Eats?</b>"
           ></i>
         </div>
       </div>
@@ -54,16 +54,22 @@
   
       <div class="container" id="listComparison">
         <div class="row">
-          <div class="col-sm-4 d-flex">
-            <button class="btn btn-primary mx-auto" id="priorityElement1">
+          <div class="col-sm-12 d-flex">
+            <button class="btn btn-primary mx-auto disabled" id="priorityElement1">
               Element 1
             </button>
           </div>
-          <div class="col-sm-4 d-flex pt-3 pb-3">
+          <!-- <div class="col-sm-12 d-flex pt-3 pb-3">
             <li class="list-group-item text-center mx-auto"><b>OR</b></li>
+          </div> -->
+          <div class="btn-group-vertical btn-group-lg mx-auto pt-3 pb-3 multi-button-prefernce">
+            <button type="button" id="btn_1" class="btn btn-primary">strongly prefer</button>
+            <button type="button" id="btn_2" class="btn btn-primary mt-1">slightly prefer</button>
+            <button type="button" id="btn_3" class="btn btn-success mt-1">slightly prefer</button>
+            <button type="button" id="btn_4" class="btn btn-success mt-1">strongly prefer</button>
           </div>
-          <div class="col-sm-4 d-flex">
-            <button class="btn btn-primary mx-auto" id="priorityElement2">
+          <div class="col-sm-12 d-flex">
+            <button class="btn btn-success mx-auto disabled" id="priorityElement2">
               Element 2
             </button>
           </div>
@@ -105,6 +111,13 @@
         <div class="container p-3 text-center">
           <button type="button" class="btn btn-success" id="doneButton">
             Done!
+          </button>
+        </div>
+
+        <div class="alert alert-warning alert-dismissible" id="alert_div">
+          <strong>Warning!</strong> You need more items in your list!
+          <button type="button" class="close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
           </button>
         </div>
     </div>
