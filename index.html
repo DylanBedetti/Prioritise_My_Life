@@ -19,11 +19,13 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+
+<!-- ***HEADER*** -->
     <div class="container-fluid p-3 my-3 bg-dark text-white">
       <div class="row align-self-center">
         <div class="col-sm-12 text-center ">
           <div class="d-inline-flex">
-            <h1>Prioritse My Life</h1>
+            <h1>Prioritise My Life</h1>
           </div>
           <i
             class="fas fa-info-circle"
@@ -38,67 +40,76 @@
       </div>
     </div>
 
-    <div
-      class="container-fluid pt-3 text-left"
-      id="previousButton"
-      style="display: none;"
-    >
-      <button type="button" class="btn btn-light" id="previousButtonClick">
-        <i class="fas fa-long-arrow-alt-left"></i>
-      </button>
-    </div>
-
-    <div class="container" id="instructionParagraph">
-      <div class="row">
-        <div class="col-sm-12 text-center">
-          <p><b>Please enter your list of items below</b></p>
-        </div>
+<!-- ***PAGE 2*** -->
+    <div id="page_2">
+      <div class="progress m-2">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" id="progressbar" role="progressbar" style="width:1%"></div>
       </div>
-    </div>
 
-    <div class="container" id="listComparison" style="display: none;">
-      <div class="row">
-        <div class="col-sm-4 d-flex">
-          <button class="btn btn-primary mx-auto" id="priorityElement1">
-            Element 1
-          </button>
-        </div>
-        <div class="col-sm-4 d-flex">
-          <li class="list-group-item text-center mx-auto"><b>OR</b></li>
-        </div>
-        <div class="col-sm-4 d-flex">
-          <button class="btn btn-primary mx-auto" id="priorityElement2">
-            Element 2
-          </button>
-        </div>
+      <div class="container-fluid pt-3 text-left">
+        <button type="button" class="btn btn-light" id="previousButton">
+          <i class="fas fa-long-arrow-alt-left"></i>
+        </button>
       </div>
-    </div>
-
-    <div class="container">
-      <div class="row" id="prioritiesList">
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Item" />
-          <div class="input-group-append">
-            <span class="input-group-text" style="cursor:pointer;">remove</span>
+  
+      <div class="container" id="listComparison">
+        <div class="row">
+          <div class="col-sm-4 d-flex">
+            <button class="btn btn-primary mx-auto" id="priorityElement1">
+              Element 1
+            </button>
+          </div>
+          <div class="col-sm-4 d-flex pt-3 pb-3">
+            <li class="list-group-item text-center mx-auto"><b>OR</b></li>
+          </div>
+          <div class="col-sm-4 d-flex">
+            <button class="btn btn-primary mx-auto" id="priorityElement2">
+              Element 2
+            </button>
           </div>
         </div>
       </div>
-
-      <div class="container pt-3 text-center" id="newItemButton">
-        <button type="button" class="btn btn-primary">
-          New Item
-        </button>
-      </div>
-
-      <div class="container p-3 text-center" id="doneButton">
-        <button type="button" class="btn btn-success">
-          Done!
-        </button>
-      </div>
-
-      <div class="row justify-content-center p-3 d-none" id="orderedList">
+  
+      
+      <div class="row justify-content-center m-5" id="orderedList">
         <ol class="list-group text-center" id="orderedListItems"></ol>
       </div>
+    </div>
+
+<!-- ***PAGE 1*** -->
+    <div id="page_1">
+      <div class="container" id="instructionParagraph">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <p><b>Please enter your list of items below</b></p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container">
+        <div class="row ml-1 mr-1" id="prioritiesList">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Item" />
+            <div class="input-group-append remove_btn">
+              <span class="input-group-text" style="cursor:pointer;">remove</span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="container pt-3 text-center">
+          <button type="button" class="btn btn-primary" id="newItemButton">
+            New Item
+          </button>
+        </div>
+  
+        <div class="container p-3 text-center">
+          <button type="button" class="btn btn-success" id="doneButton">
+            Done!
+          </button>
+        </div>
+    </div>
+
+
     </div>
 
     <script
